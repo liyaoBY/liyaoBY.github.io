@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <style>
+        #main{
+            width: 20%;
+            background-color: #afafaf;
+        }
+    </style>
+    <script type="text/javascript">
+function login(){
+console.log("点我")
+ var account= document.getElementById("account");
+ var password = document.getElementById("password");
+ console.log(account.value);
+ console.log(password.value);
+ if(account.value=="123" && password.value=="123"){
+    alert("登录成功")
+    console.log(123);
+ }else{
+     if(account.value=="" || password.value==""){
+     alert("请输入用户名或密码");}
+     else{ alert("用户名或密码错误");
+     password.value ="";}
+ }
+}
+</script>
+</head>
+<body>
+    <center id="nain">
+  <p>  账号：<input type="text" id="account"></p>
+  <p>  密码：<input type="text" id="password"></p>
+   <p> <button onclick="login()">确定</button></p>
+
+
+    </center>
+</body>
+</html>
